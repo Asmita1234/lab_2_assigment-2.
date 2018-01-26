@@ -4,12 +4,12 @@ using namespace std;
 class Node
 {  
    public:
-   int num;
+   int nm;
    Node* next;
    Node* prev;
    Node()
    {
-	   num=0;
+	   nm=0;
 	   next=NULL;
        prev=NULL;
    }
@@ -46,7 +46,7 @@ class DLL
       tmp->num=n;
       tmp->next=NULL;
       tmp->prev=NULL;
-      if(head==NULL)                           // Steps to perform when the list is empty.
+      if(head==NULL)                           //when the list is empty.
       {
          head=tmp;
       }
@@ -71,7 +71,7 @@ class DLL
    { 
      if(position>size)
      {
-      cout<<"\n \nLinked List does not have that many elements";     
+      cout<<"Linked List does not have that many elements";     
      }     
      else if(position==0)
      {
@@ -211,7 +211,7 @@ class DLL
        cout<<"  -->  ";
        temp = temp->next;
       }
-      cout<<"NULL \n";
+      cout<<"NULL ";
      }
     }
 
